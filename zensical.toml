@@ -30,8 +30,9 @@ nav = [
     {"Utilisation applicative du NoSQL" = "lecons/Utilisation_applicative_NoSQL.md"},
     {"BI et sciences des données" = "lecons/BI_sciences_donnees.md"},
   ]},
-  {"Exercices" = [
-    {"Bâtir le laboratoire" = "exercices/Exercices_Laboratoire.md"},
+  {"Laboratoire" = [
+    {"Bâtir le laboratoire - MongoDB" = "exercices/Exercices_Laboratoire.md"},
+    {"Bâtir le laboratoire - Neo4J" = "exercices/Installation_Neo4J.md"},
     {"MongoDB – Exercices de révision" = "exercices/MongoDB_Exercices_revision.md"},
     {"Graphes – Optimisation et index (LNH)" = "exercices/Graphes_Optimisation_index_LNH.md"},
   ]},
@@ -43,8 +44,8 @@ extra_css = ["stylesheets/all.css", "stylesheets/extra.css"]
 [project.theme]
 name = "material"
 custom_dir = "overrides"
-logo = "images/logo.png"
-favicon = "favicon.ico"
+logo = "images/logo.svg"
+favicon = "images/favicon.svg"
 language = "fr"
 features = [
   "content.code.annotate",
@@ -60,6 +61,7 @@ features = [
   "navigation.path",
   "navigation.sections",
   "navigation.tabs",
+  "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
   "search.highlight",

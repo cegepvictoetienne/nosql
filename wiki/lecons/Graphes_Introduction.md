@@ -5,7 +5,7 @@
 - Forces et les faiblesses du modèle relationnel
 - Principes d’une base de données orientée graphes
 - Forces et les faiblesses d’une base de données orientée graphes
-- Introduction à Neo4j (sandbox en ligne)
+- Introduction à Neo4j 
 - Cypher - La syntaxe
 
 ![A quick primer on graph databases | IT World Canada Blog](../images/lecons/07-graphes-intro-02-1.jpg)
@@ -88,16 +88,9 @@ Faiblesses
     - De modéliser et stocker des données dans un graphe
     - D’effectuer des requêtes en fonction des nœuds et des relations.
 
-## Neo4j: sandbox
+## Neo4j: Installation
 
-- Neo4j offre une plate-forme de pratique (sandbox) disponible en ligne : <https://sandbox.neo4j.com/>.
-    - Ce sera celle-ci que nous utiliserons dans les prochaines semaines.
-    - Je vous propose de vous identifier avec votre compte Google
-    - Connectez-vous et ajoutez le projet *Movies*
-        - *Create and Download credentials*
-        - *Connect with Sandbox Login*
-
-![](../images/lecons/07-graphes-intro-14-5.png)
+Installez Neo4J localement : [Procédure d'installation](../exercices/Installation_Neo4J.md)  
 
 ## Cypher : langage de requête pour Neo4j
 
@@ -252,10 +245,6 @@ RETURN *
 
 - Installez le projet *Movies*
 - Parcourez le tutoriel
-    - S’ouvre à gauche à la création du sandbox
-    - Créez un nouveau sandbox s’il n’apparaît plus
-!!! warning "Important"
+    - S’ouvre à gauche l'ouverture du guide
 
-    L’environnement sandbox n’est actif que pour 3 jours (7 si vous demandez d’étendre la durée). Assurez-vous de noter vos requêtes dans un fichier `.cypher` !
-
-![Une image contenant texte, capture d’écran, Police, logiciel](../images/lecons/07-graphes-intro-26-10.png)
+![](../images/lecons/movie-dataset.webp)

@@ -6,12 +6,15 @@ Un fichier est considéré comme référencé s'il apparaît :
   - dans zensical.toml (nav, logo, favicon, extra_css...)
 
 Utilisation :
-    python overrides/scripts/fichiers_orphelins.py
+    python overrides/scripts/fichiers_orphelins.py            # liste seulement
+    python overrides/scripts/fichiers_orphelins.py --effacer  # liste puis supprime (après confirmation)
+    python overrides/scripts/fichiers_orphelins.py --effacer --oui  # supprime sans confirmation
 
-Code de sortie : 0 si aucun fichier orphelin, 1 sinon.
+Code de sortie : 0 si aucun fichier orphelin (ou s'ils ont été supprimés), 1 sinon.
 N'utilise que la bibliothèque standard.
 """
 
+import argparse
 import re
 import sys
 import urllib.parse
@@ -44,7 +47,41 @@ def normaliser(cible: str, base: Path):
     return chemin.resolve()
 
 
+def effacer(orphelins, confirmer: bool) -> bool:
+    """Supprime les fichiers orphelins (et les dossiers devenus vides). Retourne True si effectué."""
+    if confirmer:
+        try:
+            reponse = input(f"\nSupprimer ces {len(orphelins)} fichier(s) ? [o/N] ").strip().lower()
+        except EOFError:
+            reponse = ""
+        if reponse not in ("o", "oui", "y", "yes"):
+            print("Aucun fichier supprimé.")
+            return False
+
+    for f in orphelins:
+        f.unlink()
+        print(f"  supprimé : {f.relative_to(RACINE)}")
+        # Retire les dossiers parents devenus vides (sans remonter au-delà de wiki/).
+        parent = f.parent
+        while parent != WIKI and not any(p for p in parent.iterdir() if p.name not in FICHIERS_IGNORES):
+            for p in parent.iterdir():
+                p.unlink()
+            parent.rmdir()
+            print(f"  dossier vide supprimé : {parent.relative_to(RACINE)}")
+            parent = parent.parent
+
+    print(f"{len(orphelins)} fichier(s) supprimé(s).")
+    print("Note : relancez la commande, des fichiers référencés uniquement par les pages supprimées "
+          "peuvent maintenant être orphelins.")
+    return True
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Liste (et optionnellement supprime) les fichiers non référencés du wiki.")
+    parser.add_argument("--effacer", action="store_true", help="supprime les fichiers orphelins")
+    parser.add_argument("--oui", action="store_true", help="avec --effacer : ne demande pas de confirmation")
+    args = parser.parse_args()
+
     tous = {
         f.resolve()
         for f in WIKI.rglob("*")
@@ -80,6 +117,9 @@ def main():
             print(f"  {f.relative_to(RACINE)}")
     else:
         print(f"Tous les {len(tous)} fichiers sont référencés.")
+
+    if orphelins and args.effacer and effacer(orphelins, confirmer=not args.oui):
+        sys.exit(0)
 
     sys.exit(1 if orphelins else 0)
 

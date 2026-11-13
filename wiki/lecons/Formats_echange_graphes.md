@@ -56,14 +56,15 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Sébastien Trottier",
+  "name": "Étienne Rivard",
   "jobTitle": "Professor",
   "worksFor": {
     "@type": "Organization",
     "name": "Cégep de Victoriaville"
   },
   "colleague": [
-    "http://www.example.com/ChristianeLagace.jsonld"
+    "http://www.cegepvicto.ca/SebastienTrottier.jsonld",
+    "http://www.cegepvicto.ca/SebastienTrottier.jsonld"
   ]
 }
 ```
