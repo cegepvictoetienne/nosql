@@ -62,7 +62,6 @@
 - Sources :
     - <https://fr.wikipedia.org/wiki/Big_data>
     - <http://database.guide/what-is-big-data/>
-    - <http://big-data-iscomwiz.e-monsite.com/iscomwiz/le-big-data/les-5-v-du-big-data-a-connaitre.html>
 
 ## Catégories de NoSQL
 
@@ -142,8 +141,6 @@ Sources : <http://database.guide/what-is-a-key-value-database/>
 
 - [Redis](https://redis.io/)
 - [Oracle NoSQL](https://www.oracle.com/database/nosql/index.html)
-- [Voldemorte](http://www.project-voldemort.com/voldemort/)
-- [Riak](http://fr.basho.com/)
 - [Aerospike](http://www.aerospike.com/)
 - [Oracle Berkeley DB](http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html)
 
@@ -185,10 +182,8 @@ Sources : <http://database.guide/what-is-a-column-store-database/>
 - [Bigtable (Google)](https://cloud.google.com/bigtable/)
 - [Cassandra](http://cassandra.apache.org/)
 - [HBase (Apache)](https://hbase.apache.org/)
-- [Vertica](http://www8.hp.com/us/en/software-solutions/advanced-sql-big-data-analytics/)
 - [Druid](http://druid.io/)
 - [Accumulo](https://accumulo.apache.org/)
-- [Hypertable](http://www.hypertable.com/)
 
 Sources : <http://database.guide/what-is-a-column-store-database/>
 
@@ -256,7 +251,6 @@ Sources : [http://database.guide/what-is-a-document-store-database/ ](http://dat
 - [DocumentDB](https://azure.microsoft.com/en-us/services/documentdb/) (Microsoft)
 - [CouchDB](http://couchdb.apache.org/) (Apache)
 - [MarkLogic](http://www.marklogic.com/)
-- [OrientDB](http://orientdb.com/)
 
 Sources : <http://database.guide/what-is-a-document-store-database/>
 
@@ -300,7 +294,6 @@ Sources : <http://database.guide/what-is-a-document-store-database/>
 
 - [Neo4j](https://neo4j.com/product/)
 - [Blazegraph](https://www.blazegraph.com/)
-- [OrientDB](http://orientdb.com/orientdb/)
 
 Sources : <http://database.guide/what-is-a-graph-database/>
 

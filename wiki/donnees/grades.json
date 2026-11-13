@@ -1,0 +1,22 @@
+[
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c126" }, "student_id": 0, "type": "quiz", "score": 31.95004496742112 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c127" }, "student_id": 1, "type": "homework", "score": 44.31667452616328 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c128" }, "student_id": 0, "type": "exam", "score": 54.6535436362647 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c129" }, "student_id": 1, "type": "homework", "score": 21.33260810416115 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c12a" }, "student_id": 1, "type": "quiz", "score": 96.76851542258362 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c12b" }, "student_id": 0, "type": "homework", "score": 63.98402553675503 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c12c" }, "student_id": 2, "type": "quiz", "score": 1.528220212203968 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c12d" }, "student_id": 2, "type": "homework", "score": 60.9750047106029 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c12e" }, "student_id": 2, "type": "homework", "score": 97.75889721343528 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c12f" }, "student_id": 3, "type": "exam", "score": 92.6244233936537 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c130" }, "student_id": 2, "type": "exam", "score": 19.88180838833524 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c131" }, "student_id": 3, "type": "quiz", "score": 82.59760859306996 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c132" }, "student_id": 3, "type": "homework", "score": 50.81577033538815 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c133" }, "student_id": 3, "type": "homework", "score": 92.71871597581605 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c134" }, "student_id": 4, "type": "exam", "score": 87.89071881934647 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c135" }, "student_id": 1, "type": "exam", "score": 74.20010837299897 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c136" }, "student_id": 0, "type": "homework", "score": 14.8504576811645 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c137" }, "student_id": 4, "type": "quiz", "score": 27.29006335059361 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c138" }, "student_id": 4, "type": "homework", "score": 5.244452510818443 },
+  { "_id": { "$oid": "5c5ddba3d881c43d4c82c139" }, "student_id": 4, "type": "homework", "score": 28.656451042441 }
+]

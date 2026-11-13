@@ -12,6 +12,7 @@ nav = [
     {"Les bases de données NoSQL" = "lecons/NoSQL.md"},
     {"MongoDB" = [
       {"Introduction à MongoDB" = "lecons/MongoDB_Introduction.md"},
+      {"Commandes de base" = "lecons/MongoDB_Commandes_Base.md"},
       {"Tri, limites et regroupement" = "lecons/MongoDB_Tri_limites_regroupement.md"},
       {"Transformations" = "lecons/MongoDB_Transformations.md"},
       {"Performances et index" = "lecons/MongoDB_Performances_index.md"},

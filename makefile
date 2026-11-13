@@ -8,7 +8,7 @@ DOCS_DIR    := wiki
 SITE_DIR    := site
 SCRIPTS_DIR := overrides/scripts
 
-.PHONY: help install build serve clean pre-build rebuild deploy
+.PHONY: help install build serve clean pre-build rebuild deploy liens orphelins
 
 help:
 	@echo "Cibles disponibles :"
@@ -18,6 +18,8 @@ help:
 	@echo "  make clean       - Supprime le dossier site/ et les caches"
 	@echo "  make rebuild     - clean + build"
 	@echo "  make deploy      - build + rsync vers le serveur"
+	@echo "  make liens       - Vérifie les liens externes du wiki"
+	@echo "  make orphelins   - Liste les fichiers du wiki non référencés"
 
 # --- Installation ---
 $(VENV)/bin/activate:
@@ -57,3 +59,11 @@ clean:
 
 rebuild: clean build
 
+
+# --- Vérification des liens externes ---
+liens: install
+	$(VENV_BIN)/python $(SCRIPTS_DIR)/verifier_liens.py $(DOCS_DIR)
+
+# --- Fichiers non référencés ---
+orphelins: install
+	$(VENV_BIN)/python $(SCRIPTS_DIR)/fichiers_orphelins.py

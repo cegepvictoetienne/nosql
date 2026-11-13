@@ -102,7 +102,6 @@ C’est une interface qui fait le lien entre les modèles d’une application et
 
 L'ODM le plus répandu avec MongoDB est **Mongoose** (<https://mongoosejs.com/>), qui représente les données sous forme d'objets avec la plateforme **node.js**.
 
-En PHP, c'est Doctrine qui est le plus utilisé : <https://www.doctrine-project.org/projects/doctrine-mongodb-odm/en/2.2/index.html>
 
 ## Règles de validation
 

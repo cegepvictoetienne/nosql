@@ -93,7 +93,18 @@ db.restaurants.aggregate([
 ])
 ```
 
-![](../images/lecons/04-mongodb-transformations-06-1.png)
+```json
+ { _id: { borough: 'Bronx', cuisine: 'African' }, nbRestos: 31 },
+    { _id: { borough: 'Bronx', cuisine: 'American' }, nbRestos: 411 },
+    { _id: { borough: 'Bronx', cuisine: 'Armenian' }, nbRestos: 2 },
+    { _id: { borough: 'Bronx', cuisine: 'Asian' }, nbRestos: 4 },
+    { _id: { borough: 'Bronx', cuisine: 'Bagels/Pretzels' }, nbRestos: 3 },
+    { _id: { borough: 'Bronx', cuisine: 'Bakery' }, nbRestos: 71 },
+    { _id: { borough: 'Bronx', cuisine: 'Bangladeshi' }, nbRestos: 5 },
+    { _id: { borough: 'Bronx', cuisine: 'Barbecue' }, nbRestos: 2 },
+```
+
+
 
 ## Requêtes pivot
 
@@ -147,7 +158,7 @@ Résultat :
 
 Pour accéder aux données :
 
-Utiliser l’environnement cloud et charger le lot de données : <https://www.mongodb.com/docs/guides/atlas/sample-data/>
+Utiliser l’environnement cloud et charger le lot de données : <https://www.mongodb.com/docs/manual/sample-data/>
 
 ![Chargement des données d’exemple dans Atlas](../images/lecons/04-mongodb-transformations-10-2.jpg)
 

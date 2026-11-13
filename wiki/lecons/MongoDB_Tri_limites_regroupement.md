@@ -47,7 +47,7 @@ Syntaxe :
 db.collection.aggregate(pipeline, options)
 ```
 
-**Pipeline** : Un **tableau** contenant les étapes de regroupement (voir diapositive suivante)
+**Pipeline** : Un **tableau** contenant les étapes de regroupement (voir plus bas)
 
 Documentation officielle :
 
@@ -146,7 +146,7 @@ Documentation : <https://www.mongodb.com/docs/mongodb-shell/write-scripts/>
 - Liste des restaurants (nom seulement) triée en ordre décroissant de nom.
 - Nombre de restaurants par arrondissement (borough)
 - Nombre de restaurants par cuisine
-- **Avancé**: Nombre d’évaluations (grades) par restaurant (indice : utiliser [$unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/) ou [$size](https://docs.mongodb.com/manual/reference/operator/aggregation/size/))
+- **Avancé**: Nombre d’évaluations (grades) par restaurant (indice : utiliser [\$unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/) ou [\$size](https://docs.mongodb.com/manual/reference/operator/aggregation/size/))
 
 **Personnes**
 

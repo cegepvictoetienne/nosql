@@ -46,7 +46,7 @@ MATCH p=()-[]-() RETURN p
 ## Contraintes
 
 - Afin d’avoir un certain contrôle sur l’intégrité du modèle, il est possible d’ajouter des contraintes qui fixent certaines balises.
-    - <https://neo4j.com/docs/cypher-manual/current/administration/constraints/>
+    - <https://neo4j.com/docs/cypher-manual/current/schema/syntax/#create-constraint>
 - Certaines contraintes ne sont cependant disponibles que pour la version Neo4j Entreprise.
     - Le service infonuagique Aura utilise la version Enterprise
     - Ces contraintes peuvent aussi être rendues disponibles dans la version Community à l’aide du plug-in DozerDB (version 5.21.2)

@@ -140,6 +140,6 @@ Base de données de `sample_mflix` (`comments.json`) :
 
 <https://www.mongodb.com/docs/v4.2/reference/operator/aggregation/lookup/#examples>
 
-Utiliser l’environnement *cloud* et charger le lot de données si ce n’est pas déjà fait : <https://www.mongodb.com/docs/guides/atlas/sample-data/>
+Utiliser l’environnement *cloud* et charger le lot de données si ce n’est pas déjà fait : <https://www.mongodb.com/docs/atlas/import/load-sample-data/?interface=atlas-ui#std-label-load-sample-data>
 
 Lien direct (*Download raw file*): <https://github.com/neelabalan/mongodb-sample-dataset/blob/main/sample_mflix/comments.json>
